@@ -1,0 +1,55 @@
+\documentclass{article}
+\usepackage{musixtex}
+\usepackage{geometry}   
+
+% 页面尺寸设置
+\geometry{
+   textwidth=138mm,
+   textheight=215mm,
+   a4paper,
+   left=25mm,
+   right=20mm,
+   top=25mm,
+   bottom=25mm,
+   headheight=2cm,
+   headsep=7mm,
+   footskip=7mm,
+   % footnotesep=20mm,
+   heightrounded,
+}
+% \usepackage{amsfonts}
+\title{Waltz No.2}
+\author{Dmitri Shostakovich}
+\date{\today}
+\begin{document}
+\maketitle
+\begin{music}
+    \hsize=150mm
+    % \instrumentnumber{1}
+    \setname1{Flute}
+    % \setstaffs1{1}
+    \generalmeter{\meterfrac34}%
+    % \parindent 20pt
+    \generalsignature{-3}
+    % \nostartrule
+    \startpiece
+    \systemnumbers
+    \Notes\en  \def\atnextbar{\znotes\centerHpause{4}\en}\bar
+    \Notes  \hap n \en\bar
+    \Notes  \ha m \qa l \en\bar
+    \Notes  \ibsluru1g \hap j  \en\bar
+    \Notes  \tslur1e \qa{j} \qa{j k} \en\bar
+    \Notes  \qa{ljl} \en\bar % 
+    \Notes  \ha{n} \qa{o} \en\bar
+    \Notes  \hap{n} \en\bar
+    \Notes  \hap{m} \en\bar
+    \Notes  \hap{m} \en\bar
+    \Notes  \ha{k} \qa j \en\bar
+    \Notes  \ibsluru1g \hap{=i} \en\bar
+    \Notes  \tslur1e \qap{i} \qa{g=i} \en \bar
+    \Notes  \qa{k =i k} \en \bar % 
+    \Notes  \qa{m n o} \en \bar
+    \Notes  \hap{^m} \en \bar
+    \endpiece
+\end{music}
+\end{document}
