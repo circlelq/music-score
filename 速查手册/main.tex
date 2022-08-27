@@ -1,0 +1,73 @@
+\documentclass[a4,12pt]{ctexart}
+\input{/Users/circle/Documents/GitHub/latex-template/setting.tex}
+\usepackage{accents}
+\usepackage{musixtex}
+% \usepackage{accents}
+% \usepackage{musixlyr}
+\setcounter{secnumdepth}{2}
+\setlength{\parindent}{2em}
+% \graphicspath{{fig/}}
+
+\newcommand*\underdot[1]{%
+\underaccent{\dot}{#1}}
+
+\hypersetup{
+   pdfauthor={袁磊祺},
+   pdftitle={速查手册}
+}
+
+\title{
+   \vspace{-0.8in}
+   \horrule{0.5pt} \\[0.5cm]
+   \huge \bfseries{速查手册} \\
+   \horrule{2pt} \\[0.5cm]
+}
+\author{circle}
+\date{\today}
+
+\begin{document}
+
+\input{/Users/circle/Documents/GitHub/latex-template/setc.tex}
+
+\maketitle
+
+% \setlyrics{alto}{...\lower2pt\hbox{word}...}
+
+\section{五线谱与音级}
+
+\begin{music}
+   % \hsize=150mm
+   % \instrumentnumber{1}
+   % \setname1{Flute}
+   % \setstaffs1{1}
+   % \parindent 20pt
+   \generalmeter\meterC
+   \nostartrule
+   \parindent0pt
+   \startpiece
+   % \systemnumbers
+   % \NOtes\zsong{$\underaccent{\cdot}{6}$}\qu a \en
+   % \NOtes\zsong{$\underaccent{\cdot}{7}$}\qu b \en
+   \NOtes\qu a \en
+   \NOtes\zsong{$\underdot{7}$}\qu b \en
+   \NOtes\zsong{1}\qu c \en
+   \NOtes\zsong{2}\qu d \en
+   \NOtes\zsong{3}\qu e \en
+   \NOtes\zsong{4}\qu f \en
+   \NOtes\zsong{5}\qu g \en
+   \NOtes\zsong{6}\qu h \en
+   \NOtes\zsong{7}\qu i \en
+   \NOtes\zsong{$\dot{1}$}\qu j \en
+   \NOtes\zsong{$\dot{2}$}\qu k \en
+   \NOtes\zsong{$\dot{3}$}\qu l \en
+   \NOtes\zsong{$\dot{4}$}\qu m \en
+   \Endpiece
+\end{music}
+
+
+% \nocite{*}
+
+% \bibliographystyle{plain}
+% \bibliography{bib}
+
+\end{document}
